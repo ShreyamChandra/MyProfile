@@ -1,0 +1,95 @@
+<header>
+    <div class="desktop-header">
+      <div class="header-first-half">
+        <a class="logo" href=""> 
+            <div class="first-char">S</div> 
+            <div>
+                <div class="second-half-char">hrey</div>
+                <div class="second-half-char">am</div>
+            </div> 
+        </a>
+      </div>
+      <div class="header-second-half">
+        <nav class="navbar">
+          <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+          <a [routerLink]="['/eventList']" routerLinkActive="router-link-active" >Events</a>
+          <a href="#">Instagram</a>
+          <div class="dropdown">
+            <button class="dropbtn">Option 3 
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">Option 4 </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="navlist"> <div class="pipe"></div> <div class="navItem">Welcome</div></div>
+        </nav>
+      </div>
+     
+    </div>
+    <div class="mobile-header">
+        <div class="burger" (click)="openNav()">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <div class="logo">
+            <a class="logo" href=""> 
+                <div class="first-char">S</div> 
+                <div>
+                    <div class="second-half-char">hrey</div>
+                    <div class="second-half-char">am</div>
+                </div> 
+            </a>
+        </div>
+        
+        <div id="mobile-navigation" class="mobile-navigation">
+            <!-- <div class="navbar">
+                <div class="navList">
+                    <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+                </div>
+                <div class="navList">
+                    <a [routerLink]="['/eventList']" routerLinkActive="router-link-active" >Events</a>
+                </div>
+                <div class="navList">Option 1</div>
+                <div class="navList">Option 2</div>
+                <div class="navList">Option 3</div>
+            </div> -->
+            <nav class="navbar">
+                <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+                <a [routerLink]="['/eventList']" routerLinkActive="router-link-active" >Events</a>
+                <a href="#">Instagram</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Option 3 
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Option 4 </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div> 
+                <div class="navlist"> <div class="pipe"></div> <div class="navItem">Welcome</div></div>
+              </nav>
+            <a href="#" class="closebtn" (click)="closeNav()">&times;</a>
+
+        </div>
+    </div>
+    <!-- <div class="flower-curtain"></div> -->
+  </header>
