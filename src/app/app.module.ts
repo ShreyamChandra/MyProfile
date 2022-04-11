@@ -7,6 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { InstagramPageComponent } from './instagram-page/instagram-page.component';
+import { NavBarSimpleComponent } from './nav-bar-simple/nav-bar-simple.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InstagramPageComponent } from './instagram-page/instagram-page.componen
     NavBarComponent,
     HomeComponent,
     FooterComponent,
-    InstagramPageComponent
+    InstagramPageComponent,
+    NavBarSimpleComponent
   ],
   imports: [
     BrowserModule,

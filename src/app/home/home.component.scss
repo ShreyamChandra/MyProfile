@@ -1,0 +1,23 @@
+.home-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+    .profile-picture{
+        display: block;
+        border: 0;
+        width:15vw;
+        border-radius: 400px;
+    }
+    .right-container{
+        padding: 20px;
+        .part-1{
+            font-size: 3vw;
+            font-family: sans-serif;
+        }
+        .part-2{
+            font-size: 1.5vw;
+            font-family: sans-serif;
+        }
+    }
+}

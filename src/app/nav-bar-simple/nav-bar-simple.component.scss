@@ -1,0 +1,176 @@
+$font-color:rgb(128 125 46);
+
+@media screen and (max-width: 750px) {
+    .mobile-header{
+        display: flex !important;
+    }
+    .desktop-header{
+        display: none !important;
+    }
+}
+.desktop-header{
+    //background-color: rgba(25, 154, 113, 0.843);
+    color: rgb(128 125 46);
+    height:75px;
+    position: sticky;
+    align-items: center;
+    display: flex;
+    .logo{
+        display: flex;
+        padding-left: 60px;
+        font-size: 1.5vw;
+        .first-char{
+            padding: 0;
+            font-size: 4.5vw;
+        }
+        .second-half-char{
+            padding: 0;
+            font-size: 1.5vw;
+        }
+    }
+    a{
+        color: $font-color;
+        text-decoration: none;
+        padding: 10px;
+        align-items: center;
+    }
+    .header-first-half{
+        padding-left: 60px;
+        width: 50%;
+    }
+    .header-second-half{
+        width: 50%;
+        float: right;
+        padding-right: 60px;
+        .navbar{
+            // background-color: purple;4
+            display: flex;
+            float: right;
+            font-size: 1.1vw;
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+            .dropbtn {
+                font-size: 16px;  
+                border: none;
+                outline: none;
+                color: $font-color;
+                padding:10px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+                font-size: 1.1vw;
+
+              }
+              
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                font-size: 1.1vw;
+            }
+            
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: rgba(223, 217, 217, 0.527);
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+              }     
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }     
+              .navlist{
+                display: flex;
+                padding: 10px;
+
+              }
+              .pipe{
+                  background-color: rgb(128 125 46);
+                  padding: 0;
+                  width: 2px;
+                  height: 30px;
+                  margin-left: 5px;
+                  margin-right: 15px;
+
+              }
+              
+        }
+    }
+    
+}
+
+.mobile-header{
+    //background-color: rgba(25, 154, 113, 0.843);
+    color: $font-color;
+    height:75px;
+    position: sticky;
+    align-items: center;
+    display: none;
+
+    .mobile-navigation {
+        display: flex;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(228, 186, 120, 0.514);
+        overflow-x: hidden;
+        transition: 0.5s;
+        justify-content: center;
+        a{
+            font-size: 30px;
+        }
+    }
+
+    .burger-line{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 4px;
+        width:40px;
+        margin: 6px 0;
+    }
+
+    .burger{
+        padding: 0 20px;
+    }
+
+    .logo{
+        padding-left: 20px;
+        font-size: 8vw;
+    }
+    a{
+        color:$font-color;
+        text-decoration: none;
+        // padding: 0px;
+        align-items: center;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navList{
+        width:100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 30px;
+    }
+    
+}
+
+// .flower-curtain{
+//     height: 100px;
+//     width: 100%;
+//     background-image: url("../../assets/flower-curtain.jpg");
+//     background-repeat: repeat-x;
+// }
