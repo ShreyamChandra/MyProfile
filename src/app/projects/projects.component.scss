@@ -1,0 +1,15 @@
+$header-color: rgb(62, 60, 19);
+.host{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.top-header{
+    width: 70%;
+    padding: 60px;
+    font-size: 5em;
+    color: $header-color;
+
+}

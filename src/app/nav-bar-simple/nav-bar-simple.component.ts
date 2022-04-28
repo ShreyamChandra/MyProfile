@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-nav-bar-simple',
@@ -13,14 +14,13 @@ export class NavBarSimpleComponent implements OnInit {
   }
   openNav(){
     console.log("burger clicked");
-    document.getElementById("mobile-navigation")!.style.width="100%";
-    // console.log(document.getElementById("mobile-navigation"));
-    
+    document.getElementById("mobile-navigation")!.style.width="100%";    
   }
   closeNav(){
     console.log("burger clicked");
-    document.getElementById("mobile-navigation")!.style.width="0%";
-    // console.log(document.getElementById("mobile-navigation"));
-    
+    setTimeout(function() {
+      //your code to be executed after 200 milli-second
+      document.getElementById("mobile-navigation")!.style.width="0%";    
+    }, 200);
   }
 }

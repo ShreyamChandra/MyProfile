@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { InstagramPageComponent } from './instagram-page/instagram-page.component';
 import { NavBarSimpleComponent } from './nav-bar-simple/nav-bar-simple.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { NavBarSimpleComponent } from './nav-bar-simple/nav-bar-simple.component
     HomeComponent,
     FooterComponent,
     InstagramPageComponent,
-    NavBarSimpleComponent
+    NavBarSimpleComponent,
+    ResumeComponent,
+    ContactComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

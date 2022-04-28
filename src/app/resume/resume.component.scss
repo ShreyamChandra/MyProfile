@@ -1,0 +1,46 @@
+$h-line-colour :rgb(193, 189, 57);
+$header-color: rgb(62, 60, 19);
+
+.host{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header{
+    width: 70%;
+    padding: 60px;
+    font-size: 5em;
+    color: $header-color;
+
+}
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.topic{
+    width: 50%;
+}
+.topic-item{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.period{
+    padding-right: 60px;
+    min-width: 100px;
+}
+.h-line{
+    left: 0;
+    margin-left: 40px;
+    width: calc(100% - 40px - 40px);
+    min-width: initial;
+    height: 5px;
+    margin: 0 40px 26px 40px;
+    box-sizing: border-box;
+    border-top: 1px solid $h-line-colour;
+    margin: 20px;
+
+}

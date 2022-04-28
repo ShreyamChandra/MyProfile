@@ -1,8 +1,27 @@
+$background-colour:rgba(238, 234, 108, 0.488);
+$font-color:rgba(102, 101, 55, 0.77);
+$body-color: rgb(136 138 124 / 12%);
+$profile-dimensions: 450px;
 .home-container{
     display: flex;
     flex-direction: row;
     align-items: center ;
     justify-content: center;
+    min-height: 76vh;
+    padding: 10px 0;
+    .left-container{
+        background-image: url("./../../assets/profile-picture.JPG");
+        width: $profile-dimensions;
+        height: $profile-dimensions;
+        background-size: contain;
+        background-color: aliceblue;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 0;
+        border-radius:$profile-dimensions;
+        // border: 0.5px solid $font-color;
+
+    }
     .profile-picture{
         display: block;
         border: 0;
@@ -10,14 +29,106 @@
         border-radius: 400px;
     }
     .right-container{
-        padding: 20px;
+        padding: 20px 20px 20px 40px;
+        width: 25%;
+        min-width: 500px;
         .part-1{
-            font-size: 3vw;
+            font-size: 4em;
             font-family: sans-serif;
+            color: $font-color;
+            padding: 15px 0;
         }
         .part-2{
             font-size: 1.5vw;
             font-family: sans-serif;
         }
+        .part-3{
+            width: 100%;
+            word-wrap: normal;
+            font-family: sans-serif;
+        }
+        .part-4{
+            display: flex;
+            flex-direction: row;
+        }
+        .sub-section{
+            display: flex;
+            width: 100px !important;
+            height: 100px !important;
+            align-items: center;
+            justify-content: center;
+            //border: 1px solid white ;
+            border-radius: 50%;
+            font-size: larger;
+            padding: 10px;
+            margin: 20px;
+            // font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            transition: 0.3s;
+
+        }
+        .resume{
+            background-color: $background-colour;
+            // color: rgb(188, 58, 58);
+            // color: #976fd0;
+            color: rgb(189, 123, 0);
+            //border: 2px solid $background-colour;
+        }
+        .resume:hover{
+            background-color: rgba(250, 248, 179, 0.488) !important;
+        }
+        .myWorks{
+            background-color: burlywood;
+            // color: rgb(105, 57, 57);
+            color: rgb(126, 82, 0);
+            // border: 2px solid burlywood;
+            
+        }
+        .myWorks:hover {
+            background-color: rgb(235, 209, 174) !important;
+        }
+        
+        .aboutMe{
+            background-color: cadetblue;
+            // color:rgba(238, 234, 108, 0.8);
+            color: #fff;
+        }
+        .aboutMe:hover{
+            background-color: rgb(154, 207, 209) !important;
+        }
     }
+}
+
+@media only screen and (max-width: 800px){
+    .home-container{
+        flex-direction: column-reverse !important;
+    }
+    .right-container{
+        padding: 0 !important;
+        min-width: 90% !important;
+        .sub-section{
+            padding: 0!important;
+            margin: 5px !important;
+        }
+        .part-1{
+            font-size: 3em !important;
+        }
+        .part-2{
+            font-size: 2em !important;
+        }
+        .part-3{
+            font-size: 1.2em;
+        }
+        .part-4{
+            margin: 10px 0;
+        }
+    }
+    .left-container{
+        width: 80vw !important;
+        height: 80vw !important;
+        border-radius:  90vw !important;
+        margin-bottom: 20px;
+    }
+    
 }

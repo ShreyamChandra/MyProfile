@@ -9,7 +9,6 @@ $font-color:rgb(128 125 46);
     }
 }
 .desktop-header{
-    //background-color: rgba(25, 154, 113, 0.843);
     color: rgb(128 125 46);
     height:75px;
     position: sticky;
@@ -18,7 +17,7 @@ $font-color:rgb(128 125 46);
     .logo{
         display: flex;
         padding-left: 60px;
-        font-size: 1.5vw;
+        font-size: 2rem;
         .first-char{
             padding: 0;
             font-size: 4.5vw;
@@ -34,6 +33,12 @@ $font-color:rgb(128 125 46);
         padding: 10px;
         align-items: center;
     }
+    p{
+        color: $font-color;
+        text-decoration: none;
+        padding: 10px;
+        align-items: center;
+    }
     .header-first-half{
         padding-left: 60px;
         width: 50%;
@@ -43,10 +48,9 @@ $font-color:rgb(128 125 46);
         float: right;
         padding-right: 60px;
         .navbar{
-            // background-color: purple;4
             display: flex;
             float: right;
-            font-size: 1.1vw;
+            font-size: 1.5rem;
             .dropdown {
                 float: left;
                 overflow: hidden;
@@ -106,7 +110,6 @@ $font-color:rgb(128 125 46);
 }
 
 .mobile-header{
-    //background-color: rgba(25, 154, 113, 0.843);
     color: $font-color;
     height:75px;
     position: sticky;
@@ -121,7 +124,7 @@ $font-color:rgb(128 125 46);
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(228, 186, 120, 0.514);
+        // background-color: rgba(228, 186, 120, 0.514);
         overflow-x: hidden;
         transition: 0.5s;
         justify-content: center;
@@ -133,7 +136,7 @@ $font-color:rgb(128 125 46);
     .burger-line{
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: $font-color;
         height: 4px;
         width:40px;
         margin: 6px 0;
@@ -165,12 +168,23 @@ $font-color:rgb(128 125 46);
         padding: 15px;
         font-size: 30px;
     }
+    .closebtn{
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px grey solid;
+        height: 60px;
+        width: 60px;
+        background-color: rgba(237, 233, 207, 0.7);
+        border-radius: 60px;
+    }
+    .mNavItems{
+        background-color: rgba(237, 233, 207, 0.95);
+        padding: 10px 10px 10px 20px;
+        margin: 5px;
+        border-radius: 15px;
+        width: 200px;
+    }
     
 }
-
-// .flower-curtain{
-//     height: 100px;
-//     width: 100%;
-//     background-image: url("../../assets/flower-curtain.jpg");
-//     background-repeat: repeat-x;
-// }
