@@ -13,3 +13,16 @@ $header-color: rgb(62, 60, 19);
     color: $header-color;
 
 }
+@media only screen and (max-width: 800px){
+    .host{
+        align-items: flex-start;
+    }
+    .top-header{
+        width: 80%;
+        font-size: 3em;
+        padding: 20px;
+    }
+    .container{
+        flex-direction: column;
+    }
+}

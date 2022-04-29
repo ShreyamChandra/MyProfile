@@ -10,7 +10,8 @@ $profile-dimensions: 450px;
     min-height: 76vh;
     padding: 10px 0;
     .left-container{
-        background-image: url("./../../assets/profile-picture.JPG");
+        // background-image: url("./../../assets/profile-picture.JPG");
+        background-image: url("./../../assets/Optimized-profile-picture.JPG");
         width: $profile-dimensions;
         height: $profile-dimensions;
         background-size: contain;
@@ -116,6 +117,7 @@ $profile-dimensions: 450px;
         }
         .part-2{
             font-size: 2em !important;
+            padding: 10px 0;
         }
         .part-3{
             font-size: 1.2em;

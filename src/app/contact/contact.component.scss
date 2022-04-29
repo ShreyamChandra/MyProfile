@@ -38,3 +38,28 @@ $header-color: rgb(62, 60, 19);
     font-family: sans-serif;
     color: $font-color;
 }
+@media only screen and (max-width: 800px){
+    .host{
+        align-items: flex-start;
+    }
+    .top-header{
+        width: 80%;
+        font-size: 3em;
+        padding: 20px;
+    }
+    .container{
+        flex-direction: column;
+        padding-left: 60px;
+    }
+    .content{
+        // padding-left: 20px;
+    }
+    .header{
+        width: 50% !important;
+        padding-bottom: 10px;
+    }
+    .text{
+        width: 75%;
+        padding: 30px;
+    }
+}

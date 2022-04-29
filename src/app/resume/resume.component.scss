@@ -44,3 +44,26 @@ $header-color: rgb(62, 60, 19);
     margin: 20px;
 
 }
+@media only screen and (max-width: 800px){
+    .host{
+        align-items: flex-start;
+    }
+    .header{
+        width: 80%;
+        font-size: 3em;
+        padding: 20px;
+    }
+    .content{
+        flex-direction: column;
+        width: 90%;
+        padding-left: 40px;
+    }
+    .h-line{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .topic-item{
+        flex-direction: column;
+    }
+}
