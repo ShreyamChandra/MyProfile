@@ -1,6 +1,10 @@
 $font-color:rgb(128 125 46);
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
+    .logo{
+        padding-left: 20px !important;
+    }
+}
+@media screen and (max-width: 860px) {
     .mobile-header{
         display: flex !important;
     }
