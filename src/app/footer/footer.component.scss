@@ -51,6 +51,18 @@ footer{
     height: 40px;
     width: 40px;
 }
+.instagram{
+    background-image: url("./../../assets/Instagram.png");
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
+.twitter{
+    background-image: url("./../../assets/twitter.png");
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
 @media only screen and (max-width: 800px){
     footer{
         bottom:auto;

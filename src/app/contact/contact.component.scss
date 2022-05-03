@@ -40,6 +40,24 @@ $header-color: rgb(62, 60, 19);
     font-family: sans-serif;
     color: $font-color;
 }
+.linkedIn{
+    background-image: url("./../../assets/linkedIn.png");
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
+.instagram{
+    background-image: url("./../../assets/Instagram.png");
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
+.twitter{
+    background-image: url("./../../assets/twitter.png");
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
 @media only screen and (max-width: 800px){
     .host{
         align-items: flex-start;
