@@ -7,8 +7,8 @@ $profile-dimensions: 450px;
     flex-direction: row;
     align-items: center ;
     justify-content: center;
-    min-height: 76vh;
-    padding: 10px 0;
+    min-height: calc(100vh - 225px);
+    // padding: 10px 0;
     .left-container{
         // background-image: url("./../../assets/profile-picture.JPG");
         background-image: url("./../../assets/Optimized-profile-picture.JPG");
@@ -47,6 +47,7 @@ $profile-dimensions: 450px;
             width: 100%;
             word-wrap: normal;
             font-family: sans-serif;
+            line-height: 150%;
         }
         .part-4{
             display: flex;

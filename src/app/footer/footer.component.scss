@@ -23,7 +23,7 @@ footer{
     padding-top: 25px;
 .header{
     font-family: sans-serif;
-    color:$font-color ;
+    color:$font-color;
     font-weight: bold;
 }
 .content{
@@ -45,7 +45,12 @@ footer{
     border-top: 1px solid $h-line-colour;
 
 }
-
+.linkedIn{
+    background-image: url("./../../assets/linkedIn.png");
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
 @media only screen and (max-width: 800px){
     footer{
         bottom:auto;
